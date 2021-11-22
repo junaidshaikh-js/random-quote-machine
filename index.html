@@ -8,11 +8,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/482053182b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- style sheet -->
     <link rel="stylesheet" href="./css/index.css" />
     <title>Random Quote Machine</title>
   </head>
   <body>
+    <!-- Random Quote Machine -->
+    <div class="quote-box-wrapper">
+      <section id="quote-box">
+        <div id="quote-box__text">
+          <blockquote>
+            <i class="fas fa-quote-left"></i>
+            <span id="text"> </span>
+          </blockquote>
+          <small>- <span id="author"></span></small>
+        </div>
+
+        <div id="quote-box__buttons">
+          <button>
+            <a href="#" title="Tweet Quote!"><i class="fab fa-twitter"></i></a>
+          </button>
+          <button id="new-quote">New Quote</button>
+        </div>
+      </section>
+    </div>
     <!-- JavaScript -->
     <script src="./js/index.js"></script>
   </body>
